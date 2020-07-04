@@ -1,0 +1,9 @@
+gotoh5mainpage:
+  - location: //div[@class='am-flexbox-item capability-section-title']
+    action: none
+goto_H5product:
+  - location: //div[@class='general-bg']//h2[text()='$var1']
+    action: none
+goto_H5solution:
+  - location: //div[@class='title']//h4[text()='$var1']
+    action: none

@@ -1,0 +1,20 @@
+mainpagecheck:
+  - location: //div[text()='动态馆']
+    action: none
+gotosolution:
+  - location: //li[text()='方案馆']
+    action: click
+  - location: //div[@class='index_solution_item_3K7aF']//a[text()='$var1']
+    action: click
+  - location: //div[@class='index_title_2jp90' and text()='$var1']
+    action: none
+gotoproduct:
+  - location: //div[@class="index_pass_2bhRL"]
+    action: click
+  - location: //li[text()='产品馆']
+    action: click
+  - location: //div[@class='index_ability_3ymPB']//a[text()='$var1']
+    action: click
+  - location: //div[@class='index_title_1nvtg' and text()='$var1']
+    action: none
+

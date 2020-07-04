@@ -1,0 +1,5 @@
+gotologinpage:
+  - location: //i[@class="iconfont"]//img[@src="assets/images/icon-user.svg"]
+    action: click
+  - location: //a[@class="am-button am-button-primary"]//span[text()="登 录"]
+    action: none
