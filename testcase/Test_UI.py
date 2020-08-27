@@ -124,7 +124,7 @@ class Test_webhomepage(BaseTestCase):
 
 
 if __name__ == '__main__':
-    pytest.main(["-s","Test_homepage.py","-n=3"])
+    pytest.main(["-s","Test_UI.py","-n=3"])
     # "s", "--browser=chrome",
 
 

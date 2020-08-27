@@ -32,7 +32,12 @@ class Order_api():
                    'XSRF-TOKEN': XSRF_TOKEN,
                    'SESSION': SESSION,
                    'WT_FPC': 'id=2d541b72c5782658f201591842631574:lv=1593698079126:ss=1593698079126'}
-        r=requests.post(url=url, data=m[0], headers=headers, cookies=cookies).text
-        print(r)
-order_api=Order_api()
-order_api.order_api()
+        r=requests.post(url=url, data=m[0], headers=headers, cookies=cookies).json()
+        # r=list(r)
+        # print(r['msg'])
+        if r['msg']=='订单成功':
+            return True
+        else:
+            return False
+# order_api=Order_api()
+# order_api.order_api()
