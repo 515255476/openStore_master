@@ -1,0 +1,36 @@
+{
+	"id": "160",
+	"status": 3,
+	"parentId": 2,
+	"weights": 0,
+	"solution": {
+		"data": {
+			"general_info": {
+				"title": "{{title}}",
+				"introduction": "欢迎体验解决方案",
+				"url": "http://baidu.com",
+				"advs": [{
+					"title": "欢迎体验解决方案",
+					"noid": 1,
+					"solution_adv_explain": "欢迎体验解决方案"
+				}],
+				"logo": "/open-admin/images/solutionimages/1595298367142.png"
+			},
+			"plan": {
+				"left": "<p>欢迎体验解决方案</p>",
+				"right": "<p>欢迎体验解决方案</p>"
+			},
+			"use": [{
+				"url": 18,
+				"title": "物联网应用开发"
+			}, {
+				"url": 149,
+				"title": "中移和物"
+			}],
+			"result": {
+				"content": "<p>欢迎体验解决方案</p>"
+			},
+			"success": []
+		}
+	}
+}

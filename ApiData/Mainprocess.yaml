@@ -1,0 +1,12 @@
+get_product:
+  - re_method: get
+    url: http://open.10086.cn/api/content/capabilityData
+    verify: False
+get_solution:
+  - re_method: get
+    url: https://open.10086.cn/api/solution/level
+    verify: False
+get_bottom:
+  - re_method: get
+    url: https://open.10086.cn/api/bottomLink
+    verify: False

@@ -1,0 +1,172 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "result": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "body": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Body"
+                    }
+                }
+            },
+            "required": [
+                "body",
+                "message",
+                "result"
+            ],
+            "title": "Welcome"
+        },
+        "Body": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "icon": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "code": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "tp": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Tp"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "bannerImg": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "content": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "floatEventCode": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "indexApiClassCode": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "indexIconUrl": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "indexIconHoverUrl": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "children": {
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Body"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "bannerImg",
+                "children",
+                "code",
+                "content",
+                "floatEventCode",
+                "icon",
+                "indexApiClassCode",
+                "indexIconHoverUrl",
+                "indexIconUrl",
+                "label",
+                "tp",
+                "value"
+            ],
+            "title": "Body"
+        },
+        "Tp": {
+            "type": "string",
+            "enum": [
+                "",
+                "hot",
+                "new",
+                "free"
+            ],
+            "title": "Tp"
+        }
+    }
+}
